@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/permid",
   "title": "Permid",
   "description": "PermID MCP — Refinitiv / LSEG Permanent Identifier (free, requires API key)",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/permid",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-permid",
