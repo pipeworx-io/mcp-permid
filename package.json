@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-permid",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PermID MCP — Refinitiv / LSEG Permanent Identifier (free, requires API key)",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-3f4f10660e6a11558e74b74fe035c921273382015cfcd3fcd751f5215e3b577c",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-6f7ce2f2fdb0e285555cf70e1b3dd33059703968c061f1368240bd2afc997b31",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
