@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-permid",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "PermID MCP — Refinitiv / LSEG Permanent Identifier (free, requires API key)",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-permid": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "permid"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-permid.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/permid",
   "pipeworx": {
-    "sourceHash": "v1-6f7ce2f2fdb0e285555cf70e1b3dd33059703968c061f1368240bd2afc997b31",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "permid",
+    "gatewaySlug": "permid",
+    "sourceHash": "v1-3624197c7929f2af774262fe1033dbb94d5127c319236278dcf53a5f8d2ca2ba",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }

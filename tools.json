@@ -1,0 +1,49 @@
+[
+  {
+    "name": "search_entities",
+    "description": "Search PermID for organizations, people, instruments, or quotes by name. Returns PermID, primary type, name, and a brief context. Use get_entity with the PermID for the full linked-data record.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "Free-text search term"
+        },
+        "entity_type": {
+          "type": "string",
+          "description": "Restrict by type",
+          "enum": [
+            "organization",
+            "person",
+            "instrument",
+            "quote",
+            "all"
+          ]
+        },
+        "limit": {
+          "type": "number",
+          "description": "1-100 (default 20)"
+        }
+      },
+      "required": [
+        "query"
+      ]
+    }
+  },
+  {
+    "name": "get_entity",
+    "description": "Fetch the raw JSON-LD PermID record for a numeric PermID (e.g. \"4295905573\"). Returns the full linked-data payload from api-eit.refinitiv.com under the key \"raw\" — extract organization name, LEI, RIC, industry codes, and headquarters from the raw fields.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "permid": {
+          "type": "string",
+          "description": "PermID (numeric string, e.g., \"4295905573\")"
+        }
+      },
+      "required": [
+        "permid"
+      ]
+    }
+  }
+]
