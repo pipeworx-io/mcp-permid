@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-permid",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PermID MCP — Refinitiv / LSEG Permanent Identifier (free, requires API key)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "permid",
     "gatewaySlug": "permid",
-    "sourceHash": "v1-3624197c7929f2af774262fe1033dbb94d5127c319236278dcf53a5f8d2ca2ba",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-dc9ae123728af6d0248541c92c8a666b84ef8412060109c22c3777bc9c1a49fd",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
